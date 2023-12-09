@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+* {
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../img/cont/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20%;
+}
+
+img {
+  max-width: 70px;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.theWhole {
+  position: relative;
+  margin: 10%;
+  display: flex;
+  background-color: #fff5;
+  border-radius: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 50px;
+}
+
+.contactInfo {
+  background-color: #fff5;
+  max-width: 500px;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.contactInfo li {
+  list-style-type: none;
+}
+
+.inputform {
+  margin-left: 50px;
+  background-color: #fff5;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.container {
+  position: relative;
+  min-height: 100hv;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.container .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.container .content p {
+  font-weight: 300;
+  color: #fff;
+}
+
+.containerr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.containerr .contactinfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.containerr .contactinfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.containerr .contactinfo .box .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.containerr .contactinfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.containerr .contactinfo .box .text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.container form {
+  width: 90%;
+  max-width: 500px;
+  padding: 50px 30px 20px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  position: relative;
+}
+
+.input-group label {
+  flex-basis: 28%;
+}
+
+.input-group input,
+.input-group textarea {
+  flex-basis: 68%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #999;
+  color: #333;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
+button {
+  background: #141a34;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  padding: 10px 40px;
+  outline: 0;
+  cursor: pointer;
+  display: block;
+  margin: 30px auto 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input-group span {
+  position: absolute;
+  bottom: 12px;
+  right: 17px;
+  font-size: 14px;
+  color: red;
+}
+
+#submit-error {
+  color: red;
+}
+
+.input-group span p {
+  color: seagreen;
+}
+
+.fixedd{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.fixedd img{
+    max-width: 50px;
+}
+/* Responsive Styles */
+
+@media only screen and (max-width: 826px) {
+
+  .theWhole {
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .contactInfo {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .inputform {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  
+  .theWhole{
+    padding: 35px;
+  }
+  .container {
+    padding: 30px;
+  }
+
+  .container .content h2 {
+    font-size: 28px;
+  }
+
+  .container .content p {
+    font-size: 14px;
+  }
+
+  .containerr .contactinfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .inputform {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 90px;
+    padding: 10px;
+  }
+
+  form button {
+    padding: 8px 30px;
+    margin: 20px auto 10px;
+  }
+  
+  img{
+    max-width: 48px;
+  }
+
+  .circle{
+    transform: translate(-50%, -40%);
+  }
+}

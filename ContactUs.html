@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BELLS REAL-ESTATE | Request an appointmetn</title>
+        <link rel="icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+<!-- <div class="fixedd">
+      <a href=""><img src="images/whatsup.png" alt=""></a>
+      <a href=""><img src="images/mess.png" alt=""></a>
+    </div> -->
+      <div class="theWhole">
+        <div class="circle"><img src="img/logo.png" alt=""></div>
+
+       <div class="contactInfo">
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Dembel/Shewa Dabo Bole, Addis Ababa                                ,                     <br>   Omedad Building 3rd floor</p></li><br>
+          <li><i class="fa-solid fa-phone"></i>  +251 115540445</li>
+          <li><i class="fa-solid fa-phone"></i>  +251 995317820</li><br>
+          <li><i class="fa-regular fa-envelope"></i>  contact@bellsrealestateeth.com</li>
+          <li><i class="fa-regular fa-envelope"></i>  marketing@bellsrealestateeth.com</li>
+        </ul>
+        <a href="../index.html"><button>Back To Site</button></a>
+
+       </div>
+       
+       <div class="inputform">
+        <form action="BE/customerMessage.php" method="post">
+          
+    
+          <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" name="name" id="contact-name" onkeyup="validateName()">
+          <span id="name-error"></span>
+        </div>
+    
+          <div class="input-group">
+            <label>Phone No.</label>
+            <input type="tel" placeholder="0123456789"  name="phonenumber" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+          </div>
+    
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" name="email" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
+          </div>   
+    
+          <div class="input-group">
+            <label>Your Message</label>
+            <textarea rows="5" placeholder="Enter your message" name="message" id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
+        </div>
+    
+        <button onclick="return validateForm()" type="submit">SEND</button>
+        <span id="submit-error"></span>
+       
+      </form>
+    </div>
+
+
+  </div>
+
+  
+  <script src="js/validation.js"></script>
+    </body>
+    </html>

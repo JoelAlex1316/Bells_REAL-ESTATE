@@ -7,18 +7,34 @@
 	flex-direction: column;
     margin-bottom: 4em;
     margin-top: 4em;
+	padding: 20px;
 }
 #staffsec .team-content {
     
     max-width: 100vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(2, 1fr); /* default to 1 column for small screens */
     align-items: center;
     gap: 2rem;
     text-align: center;
     margin-top: 4rem;
 }
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 600px) {
+    #staffsec .team-content {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1024px) {
+    #staffsec .team-content {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for large screens */
+    }
+}
+
 
 #staffsec .team-content img{
 	height: auto;

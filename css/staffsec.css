@@ -8,17 +8,18 @@
     margin-bottom: 4em;
     margin-top: 4em;
 }
-#staffsec .team-content{
-	width: 100%;
-	max-width: 100vw;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
-	align-items: center;
-	gap: 2rem;
-	text-align: center;
-	margin-top: 4rem;
+#staffsec .team-content {
+    
+    max-width: 100vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
 }
+
 #staffsec .team-content img{
 	height: auto;
 	border-radius: 15px;
@@ -41,9 +42,9 @@
 	color: #fff;
 }
 #staffsec .box h5{
-	font-size: 15px;
+	font-size: 10px;
 	font-weight: 600;
-	color: #b7b4bb;
+	color: #000000;
 	letter-spacing: 2px;
 }
 #staffsec .icons i{

@@ -1,0 +1,73 @@
+#staffsec {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    margin-bottom: 4em;
+    margin-top: 4em;
+}
+#staffsec .team-content{
+	width: 100%;
+	max-width: 100vw;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+	align-items: center;
+	gap: 2rem;
+	text-align: center;
+	margin-top: 4rem;
+}
+#staffsec .team-content img{
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+}
+#staffsec .center h1{
+	color: #050505;
+	font-size: 4rem;
+	text-align: center;
+}
+#staffsec .box{
+	padding-top: 6px;
+	background: #fbb03b;
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+#staffsec .box h3{
+	font-size: 23px;
+	font-weight: 600;
+	color: #fff;
+}
+#staffsec .box h5{
+	font-size: 15px;
+	font-weight: 600;
+	color: #b7b4bb;
+	letter-spacing: 2px;
+}
+#staffsec .icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+#staffsec .icons i:hover{
+	transform: scale(1.2);
+}
+#staffsec .box:hover{
+	transform: translateY(-10px);
+	cursor: pointer;
+}
+
+@media(max-width: 1240px){
+	#staffsec{
+		width: 100%;
+		height: auto;
+		padding: 90px 2%;
+	}
+	#staffsec .center h1{
+		font-size: 3.2rem;
+	}
+}
